@@ -43,6 +43,6 @@ print("\n La aproximación del cero:", xk)
 print("\n Error generado:", error)
 print("\n Itereaciones realizadas:", k)
 
-# Medidor de tiempo
+# Medidor de tiempo -> Usar la lambda permite medir el tiempo con más precisión
 tiempo_ejecucion = timeit.timeit(lambda: biseccion(2, 3, 'math.exp(x)-2*x-10', 1e-10, 1000), number=1)
 print("\nTiempo de ejecución:", tiempo_ejecucion, "segundos")
